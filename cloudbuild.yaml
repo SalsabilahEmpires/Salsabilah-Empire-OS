@@ -1,0 +1,11 @@
+steps:
+# Step 1: Python এনভায়রনমেন্ট সেটআপ
+- name: 'python:3.9'
+  entrypoint: 'python'
+  args: ['app.py']
+
+# Step 2: বিলিং মডিউল টেস্ট করা
+- name: 'python:3.9'
+  entrypoint: 'python'
+  args: ['billing.py']
+  
