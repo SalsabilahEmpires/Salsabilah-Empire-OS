@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: salsabila-empire-os
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py # অথবা gunicorn app:app (আপনার মেইন ফাইলের নাম অনুযায়ী)
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.0
