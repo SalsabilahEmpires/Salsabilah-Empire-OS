@@ -1,9 +1,0 @@
-name: OS-Deploy
-on: [push]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Run Core Logic
-        run: python main.py
